@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    Stats stats =  new Stats();
-
-    int programing;
-    int pixelDesign;
-    int modelDesign;
-    int marketing;
-
+    int programingSkill = 1;
+    int pixelDesignSkill = 1;
+    int gameDesignSkill = 1;
+    Stats stats = new Stats();
     void Start()
     {
-        programing = stats.programing;
-        pixelDesign = stats.pixelDesign;
-        modelDesign = stats.modelDesign;
-        marketing  = stats.marketing;
+
     }
 
+}
+
+public class Stats
+{
+    int programingSkill = 1;
+    int pixelDesignSkill = 1;
+    int gameDesignSkill = 1;
 }

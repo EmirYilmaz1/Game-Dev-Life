@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ICancel
+public interface IInteractable
 {
-   public void Cancel();
+   public void Interact();
 }

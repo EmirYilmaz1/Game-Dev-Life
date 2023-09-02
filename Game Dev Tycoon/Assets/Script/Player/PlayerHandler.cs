@@ -5,9 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHandler : MonoBehaviour
-{
-     Ray ray;
-     RaycastHit raycastHit;
+{   
+   static bool didSpawn;
+    Ray ray;
+    RaycastHit raycastHit;
     PlayerMovementHandler playerMovementHandler;
     InteractHandler interactHandler;
     

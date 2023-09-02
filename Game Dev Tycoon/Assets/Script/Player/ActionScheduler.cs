@@ -15,4 +15,11 @@ public class ActionScheduler : MonoBehaviour
       }
         currentCancel = a;
    }
+
+   public void CancelAll()
+   {
+      if(currentCancel == null) return;
+      currentCancel.Cancel();
+      currentCancel = null;
+   }
 }

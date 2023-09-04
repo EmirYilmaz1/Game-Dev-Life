@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerHandler : MonoBehaviour
 {   
@@ -25,9 +26,17 @@ public class PlayerHandler : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            
+            if(isMouseOverUI()) return;
             if(InteractTheObjects()) return;
             if(MoveToPoint()) return;
         }
+    }
+
+    
+    private bool isMouseOverUI()
+    {
+       return EventSystem.current.IsPointerOverGameObject(); // This will detect the is player touching the UI
     }
 
     private bool InteractTheObjects()

@@ -18,11 +18,12 @@ public class WorkGenerator : MonoBehaviour
 
      currentIndex = 0;
      Energy energy = FindObjectOfType<Energy>();
+     MoneyManager moneyManager = FindObjectOfType<MoneyManager>();
      SetWork setWork = new SetWork();
      foreach(WorkTypes work in works)
      {
         Transform workContanier = Instantiate(workTemplate, gameObject.transform);
-        setWork.SetInfo(workContanier, work, energy);
+        setWork.SetInfo(workContanier, work, energy,moneyManager);
         currentIndex++;
      }
 
@@ -32,19 +33,21 @@ public class WorkGenerator : MonoBehaviour
 
 public class SetWork
 {
-    public void SetInfo(Transform template,WorkTypes workType, Energy energy)
+    public void SetInfo(Transform template,WorkTypes workType, Energy energy, MoneyManager moneyManager)
     {
-        template.transform.Find("Image").GetComponent<Image>().sprite = workType.workImage;
-        template.transform.Find("Work Name").GetComponent<TextMeshProUGUI>().text = workType.workName;
-        template.transform.Find("Energy Cost").GetComponent<TextMeshProUGUI>().text = $" Energy Cost:{workType.EnergyAmount}";
-        template.transform.Find("Work Button").GetComponent<Button>().onClick.AddListener(() => Work(energy,workType.EnergyAmount));
+        template.Find("Image").GetComponent<Image>().sprite = workType.workImage;
+        template.Find("Work Name").GetComponent<TextMeshProUGUI>().text = workType.workName;
+        template.Find("Money Earn").GetComponent<TextMeshProUGUI>().text = workType.moneyGive.ToString();
+        template.Find("Energy Cost").GetComponent<TextMeshProUGUI>().text = $" Energy Cost:{workType.EnergyAmount}";
+        template.Find("Work Button").GetComponent<Button>().onClick.AddListener(() => Work(energy,workType.EnergyAmount,moneyManager, workType.moneyGive));
     }
 
-    private void Work(Energy energy, float energyCost)
+    private void Work(Energy energy, float energyCost, MoneyManager moneyManager, int earnedMoney)
     {
         if(energy.CanAfford(energyCost))
         {
             energy.DecreaseEnergy(energyCost);
+            moneyManager.IncreaseMoney(earnedMoney);
             GameManager.Instance.LoadTheScene();
         }
     }

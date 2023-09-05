@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66e7740e903e5d49ae0ff0283dfc1d6, type: 3}
+  m_Name: New Computer Type
+  m_EditorClassIdentifier: 
+  computerName: fddffdsfds
+  computerSprite: {fileID: 21300000, guid: c3dfb070e6b40b640bf19b2fa8128a32, type: 3}
+  computer: {fileID: 8539767579766127289, guid: eb94798aed82e9447b13c80f7d949ad3,
+    type: 3}
+  cost: 100

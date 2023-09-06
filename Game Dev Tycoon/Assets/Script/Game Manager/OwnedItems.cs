@@ -10,15 +10,16 @@ public class OwnedItems : MonoBehaviour
         return ownedComputers;
     }
 
-    void Start()
+    [SerializeField] List<RugsType>  ownedRugs = new List<RugsType>();
+    public List<RugsType> CheckOwnedRugs()
     {
-        
+        return ownedRugs;
     }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] List<BedType> ownedBed = new List<BedType>();
+    public List<BedType> CheckOwnedBed()
     {
-        
+        return ownedBed;
     }
 
 
@@ -26,5 +27,10 @@ public class OwnedItems : MonoBehaviour
     public void AddComputer(ComputerType computerType)
     {
         ownedComputers.Add(computerType);
+    }
+
+    public void AddRug(RugsType rugsType)
+    {
+        ownedRugs.Add(rugsType);
     }
 }

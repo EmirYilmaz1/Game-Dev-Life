@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c5bbb6670aceee469a9cea00c5ba870, type: 3}
-  m_Name: New Rugs Type
+  m_Name: Black Rug
   m_EditorClassIdentifier: 
   rugMaterial: {fileID: 0}
   rugName: Black
-  cost: 0
+  cost: 10

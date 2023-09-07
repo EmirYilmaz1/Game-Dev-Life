@@ -14,7 +14,7 @@ public class SpawnBed : MonoBehaviour
        currentBed = bed;
     }
 
-    private void SpawnTheBed(BedType bedType)
+    public void SpawnTheBed(BedType bedType)
     {
         Destroy(currentBed);
         currentBed = Instantiate(bedType.bedPrefab, transform);

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66e7740e903e5d49ae0ff0283dfc1d6, type: 3}
   m_Name: New Computer Type
   m_EditorClassIdentifier: 
-  computerName: fddffdsfds
-  computerSprite: {fileID: 21300000, guid: c3dfb070e6b40b640bf19b2fa8128a32, type: 3}
+  computerName: Gaming Laptop
+  computerSprite: {fileID: 21300000, guid: ea018eac65c51274b87bb0a26f345be8, type: 3}
   computer: {fileID: 8539767579766127289, guid: eb94798aed82e9447b13c80f7d949ad3,
     type: 3}
   cost: 100

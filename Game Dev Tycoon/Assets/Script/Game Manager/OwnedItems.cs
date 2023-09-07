@@ -22,6 +22,18 @@ public class OwnedItems : MonoBehaviour
         return ownedBed;
     }
 
+    [SerializeField] List<WardrobeTypes> owndeWardrobe = new List<WardrobeTypes>();
+    public List<WardrobeTypes> CheckOwnedWardrobe()
+    {
+        return owndeWardrobe;
+    }
+
+    [SerializeField] List<ChairType> ownedChair = new List<ChairType>();
+    public List<ChairType> CheckOwnedChair()
+    {
+        return ownedChair;
+    }
+
 
 
     public void AddComputer(ComputerType computerType)
@@ -32,5 +44,20 @@ public class OwnedItems : MonoBehaviour
     public void AddRug(RugsType rugsType)
     {
         ownedRugs.Add(rugsType);
+    }
+
+    public void AddBed(BedType bedType)
+    {
+        ownedBed.Add(bedType);
+    }
+
+    public void AddWardrobe(WardrobeTypes wardrobeTypes)
+    {
+        owndeWardrobe.Add(wardrobeTypes);
+    }
+
+    public void AddChair(ChairType chairType)
+    {
+        ownedChair.Add(chairType);
     }
 }

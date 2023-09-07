@@ -12,7 +12,7 @@ public class SpawnWardrobe : MonoBehaviour
     }
 
 
-    void Spawner(WardrobeTypes wardrobeTypes)
+    public void Spawner(WardrobeTypes wardrobeTypes)
     {
         Destroy(currentWardrobe.gameObject);
         currentWardrobe = Instantiate(wardrobeTypes.wardrobePrefab,transform);

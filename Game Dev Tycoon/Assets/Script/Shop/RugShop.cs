@@ -37,6 +37,7 @@ public class RugShop : MonoBehaviour
             {
                 Destroy(rectTransform.gameObject);
             }
+            currentRugs.Clear();
         }
 
 

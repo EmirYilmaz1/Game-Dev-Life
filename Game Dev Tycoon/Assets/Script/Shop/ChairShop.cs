@@ -37,6 +37,7 @@ public class ChairShop : MonoBehaviour
             {
                 Destroy(deleteObject.gameObject);
             }
+            currentChair.Clear();
         }
             foreach(ChairType chairType in ownedItems.CheckOwnedChair())
             {

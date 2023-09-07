@@ -38,6 +38,7 @@ public class BedShop : MonoBehaviour
             {
                 Destroy(deleteButton.gameObject);
             }
+            currentItem.Clear();
         }
 
        foreach(BedType bed in bedsDidntBought)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnBed : MonoBehaviour
 {
    [SerializeField] Transform starterBed;
-    BedType bedType;
+    Furniture bedType;
     Transform currentBed = null;
 
     private void Awake() 
@@ -14,7 +14,7 @@ public class SpawnBed : MonoBehaviour
        currentBed = bed;
     }
 
-    public void SpawnTheBed(BedType bedType)
+    public void SpawnTheBed(Furniture bedType)
     {
         Destroy(currentBed);
         currentBed = Instantiate(bedType.bedPrefab, transform);

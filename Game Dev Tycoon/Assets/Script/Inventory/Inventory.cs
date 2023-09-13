@@ -12,15 +12,23 @@ public class Inventory : MonoBehaviour
     List<RectTransform> currentInventory = new List<RectTransform>();
     OwnedItems ownedItems;
     RectTransform Template;
+    Spawner spawner;
 
     void Awake()
     {
+        Spawner[] spawners = FindObjectsOfType<Spawner>();
+        foreach(Spawner spawner in spawners)
+        {
+            if(spawner.furnitureType == furnitureType)
+            {
+                this.spawner = spawner;
+            }            
+        }
         ownedItems = FindObjectOfType<OwnedItems>();      
     }
 
     void OnEnable()
     {
-        Debug.Log("aabbb");
         SetList();
     }
 
@@ -38,13 +46,22 @@ public class Inventory : MonoBehaviour
         {
             RectTransform rectTransform = Instantiate(inventoryTemplate, transform.position, Quaternion.identity, transform);
             currentInventory.Add(rectTransform);
-            rectTransform.anchoredPosition = new Vector2(0, -transform.position.y + rectTransform.position.y + (-i * (rectTransform.sizeDelta.y + 45)));
-            setInventoryInfo.SetInventory(rectTransform, ownedFurniture[i]);
+            rectTransform.anchoredPosition = new Vector2(0, (-transform.position.y+500) + rectTransform.position.y + (-i * (rectTransform.sizeDelta.y + 45)));
+            setInventoryInfo.SetInventory(rectTransform, ownedFurniture[i], spawner );
         }
     }
 
-    void Update()
+    void OnDisable()
     {
-        
+        if(currentInventory.Count<0)return;
+
+        foreach(RectTransform deleted in currentInventory)
+        {
+            Destroy(deleted.gameObject);
+        }
+
+        ownedFurniture.Clear();
+        currentInventory = new List<RectTransform>();
+
     }
 }

@@ -25,7 +25,7 @@ public class InteractHandler:MonoBehaviour, ICancel
 
     private void GoToTarget(PlayerMovementHandler playerMovementHandler, Vector3 targetPosition, IInteractable interactable)
     {
-        bool isDistance = 1.5>Vector3.Distance(transform.position, targetPosition);
+        bool isDistance = 2>Vector3.Distance(transform.position, targetPosition);
         
         if(!isDistance)
         playerMovementHandler.Mover(targetPosition);

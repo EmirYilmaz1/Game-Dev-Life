@@ -57,7 +57,7 @@ public class Shop : MonoBehaviour
         {
             RectTransform shopItem = Instantiate(shopTemplate, transform.position,Quaternion.identity,transform);
             setFurnitureInfo.SetInfo(shopItem,itemDidntBought[i],ownedItems,moneyManager, this);
-            shopItem.anchoredPosition = new Vector2(0, shopItem.position.y+(-i*(shopItem.sizeDelta.y+45)));
+            shopItem.anchoredPosition = new Vector2(0, (-transform.position.y+500) + shopItem.position.y + (-i * (shopItem.sizeDelta.y + 45)));
             currentItem.Add(shopItem);
         }
     } 
@@ -68,7 +68,6 @@ public class Shop : MonoBehaviour
 
         foreach(RectTransform deleted in currentItem)
         {
-            print("aaa");
             Destroy(deleted.gameObject);
         }
         currentItem = new List<RectTransform>();

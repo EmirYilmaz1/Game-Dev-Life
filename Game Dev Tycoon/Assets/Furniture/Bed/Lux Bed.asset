@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15b52d5eb109344aaaae2c9f7163a13, type: 3}
+  m_Name: Lux Bed
+  m_EditorClassIdentifier: 
+  furnitureImage: {fileID: 21300000, guid: f895584cafd578545a80317f562c9cce, type: 3}
+  furniturePrefab: {fileID: 5576073403362461893, guid: dd3959127e6a1934b857920d6b934cbf,
+    type: 3}
+  furnitureName: Lux bed
+  furnitureType: 4
+  cost: 200

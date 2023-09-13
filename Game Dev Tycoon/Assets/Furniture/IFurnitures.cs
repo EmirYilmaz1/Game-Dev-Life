@@ -9,4 +9,4 @@ public interface IFurnitures
    public FurnitureType FurnitureType{get;}
 }
 
-public enum FurnitureType{chair, rug, wardrobe, computer, bed}
+public enum FurnitureType{chair, rug, wardrobe, computer, bed, TV}

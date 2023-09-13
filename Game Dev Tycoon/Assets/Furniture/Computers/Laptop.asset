@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c66e7740e903e5d49ae0ff0283dfc1d6, type: 3}
+  m_Script: {fileID: 11500000, guid: a15b52d5eb109344aaaae2c9f7163a13, type: 3}
   m_Name: Laptop
   m_EditorClassIdentifier: 
-  computerName: Gaming Laptop
-  computerSprite: {fileID: 21300000, guid: ea018eac65c51274b87bb0a26f345be8, type: 3}
-  computer: {fileID: 8539767579766127289, guid: eb94798aed82e9447b13c80f7d949ad3,
+  furnitureImage: {fileID: 21300000, guid: ea018eac65c51274b87bb0a26f345be8, type: 3}
+  furniturePrefab: {fileID: 8539767579766127289, guid: eb94798aed82e9447b13c80f7d949ad3,
     type: 3}
-  cost: 100
+  furnitureName: Gaming Laptop
+  furnitureType: 3
+  cost: 200

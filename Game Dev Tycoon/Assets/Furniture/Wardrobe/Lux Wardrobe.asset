@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15b52d5eb109344aaaae2c9f7163a13, type: 3}
+  m_Name: Lux Wardrobe
+  m_EditorClassIdentifier: 
+  furnitureImage: {fileID: 21300000, guid: 0989e80e65561604bb7bf755bcaad561, type: 3}
+  furniturePrefab: {fileID: 4141806204488428694, guid: b01e0d45145a2cc4d842f2b6f99e047f,
+    type: 3}
+  furnitureName: Lux Wardrobe
+  furnitureType: 2
+  cost: 600

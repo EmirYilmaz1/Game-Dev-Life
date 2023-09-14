@@ -424,6 +424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6599490599539662606}
+  - component: {fileID: -2951790650152505984}
   m_Layer: 0
   m_Name: Normal bed
   m_TagString: Untagged
@@ -451,3 +452,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 269.49, z: 0}
+--- !u!114 &-2951790650152505984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915248303292834391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d3b9e4a20514548add92f2fb201f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureInfo: {fileID: 11400000, guid: ebf22688a835edd438f9d26e75a2b8a2, type: 2}

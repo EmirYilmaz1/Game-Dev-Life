@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9893dc5e2c49e1a47a1b2f428641a422, type: 3}
-  m_Name: New Game Type
+  m_Name: To The Venus
   m_EditorClassIdentifier: 
-  neededSkill: 000000000100000003000000
-  gameName: Pixe
-  neededProgramingSkill: 1
-  neededPixelDesignSkill: 1
-  neededGameDesignSkill: 0
-  neededLevelDesignSkill: 1
+  neededSkill: 000000000100000002000000
+  gameName: To The Venus
+  neededProgramingSkill: 2
+  neededPixelDesignSkill: 4
+  neededGameDesignSkill: 8
+  neededLevelDesignSkill: 0
   neededMarkettingSkill: 0
-  earnedMoney: 100
+  earnedMoney: 350

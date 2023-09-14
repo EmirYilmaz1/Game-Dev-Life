@@ -13,6 +13,12 @@ public class MoneyManager : MonoBehaviour
         return currentMoney;
     }
 
+    public void ChangeMoney(int money)
+    {
+        currentMoney = money;
+        OnMoneyChange?.Invoke();
+    }
+
     public void DecreaseMoney(int amount)
     {
         currentMoney -= amount;

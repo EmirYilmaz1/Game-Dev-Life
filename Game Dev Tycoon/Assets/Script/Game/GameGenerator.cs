@@ -22,7 +22,7 @@ public class GameGenerator : MonoBehaviour
        {
             RectTransform gameContainer = Instantiate(gameTemplate,transform.position,Quaternion.identity,transform);
             setInfo.SetGame(gameContainer, games, playerStats,moneyManager);
-            gameContainer.anchoredPosition = new Vector2(0,gameContainer.anchoredPosition.y+(-currentIndex*(gameContainer.sizeDelta.y+45)));
+            gameContainer.anchoredPosition = new Vector2(0,400+gameContainer.anchoredPosition.y+(-currentIndex*(gameContainer.sizeDelta.y+45)));
             currentIndex++;
        } 
     }
@@ -43,11 +43,13 @@ public class SetInfo
     string skillName;
     public void SetGame(RectTransform template,GameType gameType, PlayerStats playerStats, MoneyManager moneyManager)
     {
+        skill1 = true;
+        skill2 = true;
+        skill3 = true;
         template.Find("Name").GetComponent<TextMeshProUGUI>().text = gameType.gameName;
         foreach(Skills skill in gameType.neededSkill)
-        {
-            
-            int requiredLevel = 0;
+        {  
+        int requiredLevel = 0;
            switch(skill)
            {
                 case Skills.programingSkill:

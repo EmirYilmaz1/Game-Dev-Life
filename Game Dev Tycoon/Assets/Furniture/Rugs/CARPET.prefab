@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2203764186841270984}
   - component: {fileID: 5151394840264305905}
   - component: {fileID: 2142799211162261286}
+  - component: {fileID: -8112994656219615291}
   m_Layer: 0
   m_Name: CARPET
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-8112994656219615291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4005715157393696300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d3b9e4a20514548add92f2fb201f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureInfo: {fileID: 11400000, guid: 3709c4a7a2823374587ebeb06e84453e, type: 2}

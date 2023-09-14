@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1476908362358310282}
+  - component: {fileID: 3615772482731336942}
   m_Layer: 0
   m_Name: Start Computer
   m_TagString: Untagged
@@ -35,6 +36,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!114 &3615772482731336942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961754440224816807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d3b9e4a20514548add92f2fb201f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  furnitureInfo: {fileID: 11400000, guid: 1b36754bfe8f18b4a9bef6603bef6f69, type: 2}
 --- !u!1 &2047925513174475403
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,7 +31,7 @@ public class SkillProgres :MonoBehaviour
 
     private void SetSkill()
     {
-        studyMoney = statLevel *10;
+        studyMoney = statLevel *30;
         transform.Find("Energy").GetComponent<TextMeshProUGUI>().text =$"Energy: { energyCost}";
         transform.Find("Money").GetComponent<TextMeshProUGUI>().text = $"Money: {studyMoney}";
         transform.Find("Current Level").GetComponent<TextMeshProUGUI>().text =  $"Current Level {statLevel}";

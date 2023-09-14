@@ -13674,6 +13674,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479022407}
     m_Modifications:
+    - target: {fileID: 1055982469, guid: 9fd1f2fd6d0717947a0e3f1492173ba1, type: 3}
+      propertyPath: gameTypes.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055982469, guid: 9fd1f2fd6d0717947a0e3f1492173ba1, type: 3}
+      propertyPath: gameTypes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b1bf3e73b0fdab48987403339ba3cb2,
+        type: 2}
+    - target: {fileID: 1055982469, guid: 9fd1f2fd6d0717947a0e3f1492173ba1, type: 3}
+      propertyPath: gameTypes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4a169bc906564614fa15f122f281164e,
+        type: 2}
+    - target: {fileID: 1055982469, guid: 9fd1f2fd6d0717947a0e3f1492173ba1, type: 3}
+      propertyPath: gameTypes.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 72346f7cee58a594082580f0b7f9fb11,
+        type: 2}
+    - target: {fileID: 1055982469, guid: 9fd1f2fd6d0717947a0e3f1492173ba1, type: 3}
+      propertyPath: gameTypes.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: a1c1a080538a466449095351d112e721,
+        type: 2}
+    - target: {fileID: 1055982469, guid: 9fd1f2fd6d0717947a0e3f1492173ba1, type: 3}
+      propertyPath: gameTypes.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 76198d658432b5341ab307764d6eabc2,
+        type: 2}
+    - target: {fileID: 1055982469, guid: 9fd1f2fd6d0717947a0e3f1492173ba1, type: 3}
+      propertyPath: gameTypes.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: dc5b767e4d63593499fa9dbf04c0057e,
+        type: 2}
     - target: {fileID: 2585498366763899354, guid: 9fd1f2fd6d0717947a0e3f1492173ba1,
         type: 3}
       propertyPath: skill

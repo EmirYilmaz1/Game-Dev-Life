@@ -6,7 +6,6 @@ using UnityEngine;
 public class Fade : MonoBehaviour
 {
     CanvasGroup canvasGroup;
-    int alpha;
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();

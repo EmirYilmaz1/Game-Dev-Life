@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6150950556364746677}
-  - component: {fileID: 6150950556364746678}
   - component: {fileID: 6150950556364746679}
   - component: {fileID: 6150950556364746664}
   - component: {fileID: 6150950556364746665}
@@ -17,6 +16,7 @@ GameObject:
   - component: {fileID: 6150950556364746676}
   - component: {fileID: 6150950556364746675}
   - component: {fileID: 6150950556364746674}
+  - component: {fileID: 4731410057763475686}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -35,18 +35,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2165148092284846466}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6150950556364746678
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6150950556364746667}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &6150950556364746679
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -126,9 +119,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 1000000
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 1000000
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -173,3 +166,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783ef39b14f564c429290afdff510472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &4731410057763475686
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6150950556364746667}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 7db6821b339fd0d48aa959ce07dac48d, type: 3}
+  m_Controller: {fileID: 9100000, guid: 85faa1029f5c28a448a592f444c189b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &1839333190183790185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6150950556364746677}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_Name
+      value: children1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 85faa1029f5c28a448a592f444c189b9, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 7db6821b339fd0d48aa959ce07dac48d,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'Breathing Idle'"
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: 7db6821b339fd0d48aa959ce07dac48d, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 7db6821b339fd0d48aa959ce07dac48d, type: 3}
+--- !u!4 &2165148092284846466 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7db6821b339fd0d48aa959ce07dac48d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1839333190183790185}
+  m_PrefabAsset: {fileID: 0}

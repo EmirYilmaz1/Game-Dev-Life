@@ -7,6 +7,6 @@ public class Lamp : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("a");
-        GetComponentInChildren<Light>().enabled = !GetComponentInChildren<Light>().enabled;
+        GetComponent<Light>().enabled = !GetComponentInChildren<Light>().enabled;
     }
 }

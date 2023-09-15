@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15b52d5eb109344aaaae2c9f7163a13, type: 3}
   m_Name: Confored Chair
   m_EditorClassIdentifier: 
-  furnitureImage: {fileID: 0}
+  furnitureImage: {fileID: 21300000, guid: 2e36c0ade2cbff748ad12459b84d5335, type: 3}
   furniturePrefab: {fileID: 6813389041172978293, guid: 29b771a8cca312749b6575e1a519b57e,
     type: 3}
   furnitureName: Cahir 3

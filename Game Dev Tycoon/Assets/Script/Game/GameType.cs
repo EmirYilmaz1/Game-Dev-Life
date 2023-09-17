@@ -19,6 +19,8 @@ public class GameType : ScriptableObject
     int energyCost;
     public int earnedMoney;
 
+    public bool didMade;
+
    public bool CanSkillAfford(PlayerStats playerStats)
     {
         foreach(Skills skill in neededSkill)

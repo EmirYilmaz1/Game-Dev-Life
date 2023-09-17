@@ -5,6 +5,7 @@ public class Json
 {
    public List<Furniture> ownedItems;
    public List<Furniture> furnitureInScene = new List<Furniture>();
+   public List<GameType> gameTypes = new List<GameType>();
    public int money;
 
    public int programingSkill = 1;

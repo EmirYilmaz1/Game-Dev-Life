@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededSkill: 000000000100000002000000
   gameName: To The Venus
-  neededProgramingSkill: 2
+  neededProgramingSkill: 4
   neededPixelDesignSkill: 4
-  neededGameDesignSkill: 8
+  neededGameDesignSkill: 6
   neededLevelDesignSkill: 0
   neededMarkettingSkill: 0
-  earnedMoney: 350
+  earnedMoney: 600
+  didMade: 0

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15b52d5eb109344aaaae2c9f7163a13, type: 3}
+  m_Name: Gaming Lab
+  m_EditorClassIdentifier: 
+  furnitureImage: {fileID: 21300000, guid: 069febbc51f0a704bb21b52554a59809, type: 3}
+  furniturePrefab: {fileID: 6470167939332309662, guid: e3c01526aec5e9341925affc54e14f05,
+    type: 3}
+  furnitureName: Gaming Lamp
+  furnitureType: 6
+  cost: 400

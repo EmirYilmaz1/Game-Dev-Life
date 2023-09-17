@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededSkill: 000000000100000002000000
   gameName: Nactario
-  neededProgramingSkill: 10
-  neededPixelDesignSkill: 7
-  neededGameDesignSkill: 8
+  neededProgramingSkill: 8
+  neededPixelDesignSkill: 10
+  neededGameDesignSkill: 11
   neededLevelDesignSkill: 0
   neededMarkettingSkill: 0
-  earnedMoney: 1000
+  earnedMoney: 2000
+  didMade: 0

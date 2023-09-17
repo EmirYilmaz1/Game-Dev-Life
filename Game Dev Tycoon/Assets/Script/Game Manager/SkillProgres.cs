@@ -7,8 +7,10 @@ using UnityEngine.UI;
 
 public class SkillProgres :MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI notEnoughEnergy;
+    [SerializeField] TextMeshProUGUI notEnoughMoney;
     [SerializeField] Skills skill;
-    [SerializeField] int energyCost;
+    int energyCost = 30;
 
 
     PlayerStats playerStats;
@@ -18,6 +20,8 @@ public class SkillProgres :MonoBehaviour
 
     private int studyMoney;
     private int statLevel;
+
+    bool canUpdate = true;
 
     private void OnEnable()
     {
@@ -35,6 +39,30 @@ public class SkillProgres :MonoBehaviour
         transform.Find("Energy").GetComponent<TextMeshProUGUI>().text =$"Energy: { energyCost}";
         transform.Find("Money").GetComponent<TextMeshProUGUI>().text = $"Money: {studyMoney}";
         transform.Find("Current Level").GetComponent<TextMeshProUGUI>().text =  $"Current Level {statLevel}";
+    }
+
+    public void ShowMoneyText()
+    {
+        StartCoroutine(NotEnouhMoney());
+    }
+
+    IEnumerator NotEnouhMoney()
+    {
+        notEnoughMoney.enabled = true;
+       yield return new  WaitForSecondsRealtime(.3f);
+       notEnoughMoney.enabled = false;
+    }
+
+    public void ShowEnergy()
+    {
+        StartCoroutine(NotEnergy());
+    }
+
+    IEnumerator NotEnergy()
+    {
+        notEnoughEnergy.enabled = true;
+        yield return new WaitForSecondsRealtime(.3f);
+        notEnoughEnergy.enabled = false;
     }
 
     private void FindSkill()
@@ -66,17 +94,30 @@ public class SkillProgres :MonoBehaviour
 
     public void CanStudy()
     {
-        if(moneyManager.CanAfford(studyMoney) &&energy.CanAfford(energyCost))
-        {
-            moneyManager.DecreaseMoney(studyMoney);
-            energy.DecreaseEnergy(energyCost);
+        if(moneyManager.CanAfford(studyMoney) &&energy.CanAfford(energyCost) && canUpdate)
+        {   
+            canUpdate = false;
             playerStats.UpgradeSkill(skill);
+            moneyManager.DecreaseMoney(studyMoney);
+            energy.DecreaseEnergy(energyCost); 
             FindSkill();
             SetSkill();
+            StartCoroutine(CanBuyTrue());
         }
-        else
+        else if(!moneyManager.CanAfford(studyMoney))
         {
-            Debug.LogWarning("Man this is bad");        }
+            ShowMoneyText();
+        }
+        else if(!energy.CanAfford(energyCost))
+        {
+            ShowEnergy();
+        }
+    }
+
+    private IEnumerator CanBuyTrue()
+    {
+        yield return new WaitForSecondsRealtime(0.4f);
+        canUpdate = true;
     }
 }
  

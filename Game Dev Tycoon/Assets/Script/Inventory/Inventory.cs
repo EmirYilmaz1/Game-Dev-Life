@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    
+
+
+    [SerializeField] TextMeshProUGUI textMeshProUGUI;
     [SerializeField] FurnitureType furnitureType;
     [SerializeField] RectTransform inventoryTemplate;
 
@@ -47,7 +50,7 @@ public class Inventory : MonoBehaviour
             RectTransform rectTransform = Instantiate(inventoryTemplate, transform.position, Quaternion.identity, transform);
             currentInventory.Add(rectTransform);
             rectTransform.anchoredPosition = new Vector2(0, (-transform.position.y+500) + rectTransform.position.y + (-i * (rectTransform.sizeDelta.y + 45)));
-            setInventoryInfo.SetInventory(rectTransform, ownedFurniture[i], spawner );
+            setInventoryInfo.SetInventory(rectTransform, ownedFurniture[i], spawner, this );
         }
     }
 
@@ -63,5 +66,17 @@ public class Inventory : MonoBehaviour
         ownedFurniture.Clear();
         currentInventory = new List<RectTransform>();
 
+    }
+
+    public void ShowText()
+    {
+        StartCoroutine(Process());
+    }
+
+    IEnumerator Process()
+    {
+        textMeshProUGUI.enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        textMeshProUGUI.enabled = false;
     }
 }

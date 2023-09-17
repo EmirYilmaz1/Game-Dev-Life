@@ -15,4 +15,4 @@ MonoBehaviour:
   workImage: {fileID: 21300000, guid: fbbcf73fb19c5c747b33d1188a8d16ce, type: 3}
   workName: Barista
   moneyGive: 15
-  EnergyAmount: 40
+  EnergyAmount: 30

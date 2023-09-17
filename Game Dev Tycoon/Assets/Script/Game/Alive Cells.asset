@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededSkill: 000000000100000003000000
   gameName: Alive Cells
-  neededProgramingSkill: 5
-  neededPixelDesignSkill: 5
+  neededProgramingSkill: 6
+  neededPixelDesignSkill: 7
   neededGameDesignSkill: 0
   neededLevelDesignSkill: 6
   neededMarkettingSkill: 0
-  earnedMoney: 300
+  earnedMoney: 1100
+  didMade: 0

@@ -15,6 +15,6 @@ MonoBehaviour:
   furnitureImage: {fileID: 21300000, guid: e70cbc6da0f280d459348c6ba5430126, type: 3}
   furniturePrefab: {fileID: 6579277377974042512, guid: 3e85070f165a34f419daed9b0a438d39,
     type: 3}
-  furnitureName: High Gaming Pc
+  furnitureName: High Gaming Computer
   furnitureType: 3
-  cost: 500
+  cost: 750

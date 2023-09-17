@@ -15,6 +15,6 @@ MonoBehaviour:
   furnitureImage: {fileID: 21300000, guid: a1ebc43d1c2b4154e8c0374e91867ba2, type: 3}
   furniturePrefab: {fileID: 3915044171013973497, guid: bd267cd7a40d5564a9ea746dd7286fa7,
     type: 3}
-  furnitureName: Old Pc
+  furnitureName: Old Computer
   furnitureType: 3
   cost: 0

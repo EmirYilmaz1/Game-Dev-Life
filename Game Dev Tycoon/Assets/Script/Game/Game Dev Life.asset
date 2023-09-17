@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9893dc5e2c49e1a47a1b2f428641a422, type: 3}
+  m_Name: Game Dev Life
+  m_EditorClassIdentifier: 
+  neededSkill: 000000000200000003000000
+  gameName: Game Dev Life
+  neededProgramingSkill: 4
+  neededPixelDesignSkill: 0
+  neededGameDesignSkill: 3
+  neededLevelDesignSkill: 2
+  neededMarkettingSkill: 0
+  earnedMoney: 300
+  didMade: 0

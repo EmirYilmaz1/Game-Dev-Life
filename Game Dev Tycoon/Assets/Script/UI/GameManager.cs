@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
         jsonSaveFile.gameDesignSkill = playerStats.gameDesignSkill;
         jsonSaveFile.levelDesignSkill = playerStats.levelDesignSkill;
         jsonSaveFile.markettingSkill = playerStats.markettingSkill;
+        jsonSaveFile.gameTypes = MadedGames.gameTypes;
         jsonSaveFile.money = FindObjectOfType<MoneyManager>().GetCurrentMoney();
         jsonSaveFile.ownedItems = FindObjectOfType<OwnedItems>().ownedItem;
 
@@ -90,6 +91,8 @@ public class GameManager : MonoBehaviour
         playerStats.gameDesignSkill = jsonSaveFile.gameDesignSkill;
         playerStats.levelDesignSkill = jsonSaveFile.levelDesignSkill;
         playerStats.markettingSkill = jsonSaveFile.markettingSkill;
+
+        MadedGames.gameTypes= jsonSaveFile.gameTypes;
 
 
         MoneyManager moneyManager = FindObjectOfType<MoneyManager>();

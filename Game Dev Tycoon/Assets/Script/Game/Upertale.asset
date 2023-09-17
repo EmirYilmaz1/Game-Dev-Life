@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededSkill: 000000000100000002000000
   gameName: Upertale
-  neededProgramingSkill: 3
-  neededPixelDesignSkill: 2
-  neededGameDesignSkill: 10
+  neededProgramingSkill: 5
+  neededPixelDesignSkill: 7
+  neededGameDesignSkill: 5
   neededLevelDesignSkill: 0
   neededMarkettingSkill: 0
-  earnedMoney: 700
+  earnedMoney: 900
+  didMade: 0

@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededSkill: 000000000100000003000000
   gameName: velest
-  neededProgramingSkill: 7
-  neededPixelDesignSkill: 7
-  neededGameDesignSkill: 0
-  neededLevelDesignSkill: 13
+  neededProgramingSkill: 6
+  neededPixelDesignSkill: 0
+  neededGameDesignSkill: 9
+  neededLevelDesignSkill: 8
   neededMarkettingSkill: 0
-  earnedMoney: 750
+  earnedMoney: 1350
+  didMade: 0

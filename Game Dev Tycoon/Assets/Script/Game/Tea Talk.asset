@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededSkill: 000000000300000001000000
   gameName: Tea Talk
-  neededProgramingSkill: 2
-  neededPixelDesignSkill: 7
+  neededProgramingSkill: 5
+  neededPixelDesignSkill: 4
   neededGameDesignSkill: 0
   neededLevelDesignSkill: 4
   neededMarkettingSkill: 0
-  earnedMoney: 200
+  earnedMoney: 750
+  didMade: 0

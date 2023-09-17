@@ -15,4 +15,4 @@ MonoBehaviour:
   workImage: {fileID: 21300000, guid: c6837ca86ef178a41a3751346265b2d1, type: 3}
   workName: Cleaner
   moneyGive: 10
-  EnergyAmount: 20
+  EnergyAmount: 25

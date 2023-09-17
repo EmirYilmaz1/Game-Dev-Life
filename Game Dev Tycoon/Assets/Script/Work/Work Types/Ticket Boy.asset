@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ticket Boy
   m_EditorClassIdentifier: 
   workImage: {fileID: 21300000, guid: a54c3ef01b85a7a4bac2c8c7c0e2a569, type: 3}
-  workName: Ticket Bot
-  moneyGive: 20
-  EnergyAmount: 45
+  workName: Ticket Boy
+  moneyGive: 25
+  EnergyAmount: 50
